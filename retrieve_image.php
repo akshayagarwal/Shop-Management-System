@@ -1,0 +1,1 @@
+<img src="retrieve_image_p.php"/>

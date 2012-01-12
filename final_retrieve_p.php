@@ -1,0 +1,1 @@
+<img src="final_retrieve.php?photoid=8" alt="image">

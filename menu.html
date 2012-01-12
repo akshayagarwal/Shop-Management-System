@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="shortcut icon" href="favicon.ico"> 
+<link rel="stylesheet" href="../jquery.treeview.css" />
+<link rel="stylesheet" href="../red-treeview.css" />
+<link rel="stylesheet" href="screen.css" />
+
+<script src="../lib/jquery.js" type="text/javascript"></script>
+<script src="../lib/jquery.cookie.js" type="text/javascript"></script>
+<script src="../jquery.treeview.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+		$(function() {
+			$("#tree").treeview({
+				collapsed: true,
+				animated: "fast",
+				control:"#sidetreecontrol",
+				persist: "cookie"
+			});
+		})
+		
+	</script>
+<title>Welcome to Agrawal Brothers | Administrator</title>
+</head>
+
+
+<body>
+<div id="main">Main Menu
+
+<div id="sidetree">
+<div class="treeheader">&nbsp;</div>
+<div id="sidetreecontrol"><a href="?#">Collapse All</a> | <a href="?#">Expand All</a></div>
+
+<ul id="tree">
+        <li><a href="agb_admin_home.html" target="right"><strong>Home</strong></a></li>
+	
+	<ul>
+           <!---------------------Start WEBSITE ----------------------------------------->
+		<li><strong><font color="red">Website</font></strong>
+		  <ul>
+				<li><a href=""><strong>Mobiles</strong></a>
+					<ul>
+						<li><a href="add_new_mobile.php" target="right">Add New Mobile</a></li>
+						<li><a href="view_edit_mobile.php" target="right">View/Edit/Delete Mobile</a></li>
+						<ul>Brands
+						    <li><a href="add_brand.php" target="right">Add New Brand</a></li>
+						    <li><a href="view_brand.php" target="right">View/Delete Brand</a></li>
+						</ul>
+					</ul>
+				</li>
+		  
+		  
+				<li><a href=""><strong>Manage HomePage</strong></a>
+				 <ul>
+					<li><a href="view_latest_mobiles.php" target="right">Update Latest Mobiles</a></li>
+					<li><a href="update_offer.php" target="right">Update Offer of the Day</a></li>
+					<li><a href="update_gold_silver.php" target="right">Update Gold/Silver Rates</a></li>
+				 </ul>
+			       </li>
+				
+				<li><a href=""><strong>Accessories</strong></a>
+		                 <ul>
+				        <li><a href="agb_admin_home.html" target="right"><strong>Home</strong></a></li>
+				        <li><a href="a_add_acc.php" target="right">Add Accessory</a></li>
+				        <li><a href="a_view_acc.php" target="right">View Accessory</a></li>
+				
+		                 </ul>
+				</li>
+		  </ul>
+		</li>
+				
+				
+		  </ul>
+		</li>
+          <!---------------------END WEBSITE ----------------------------------------->
+	  
+	  <!---------------------Start SIM Data Entry ----------------------------------------->
+	        <li><strong><font color="green">SIM Data Entry</font></strong>
+	          <ul>
+				<li><a href="../../../customers/forms/form/new_sim_entry.php" target="right">New Entry</a></li>
+				<li><a href="../../../customers/forms/form/view_entries.php" target="right">View Entries</a></li>
+	          </ul>
+	        </li>
+         <!---------------------End SIM Data Entry ----------------------------------------->
+	 
+	 <!---------------------Start Repair Orders ----------------------------------------->
+	        <li><strong><font color="orange">Repair Orders</font></strong>
+		  <ul>
+				<li><a href="../../../orders/forms/form/new_order.php" target="right">New Order</a></li>
+				<li><a href="../../../orders/forms/form/order_completion.php" target="right">Pending Orders</a></li>
+				<li><a href="../../../orders/forms/form/order_delivery.php" target="right">Order Delivery</a></li>
+				<li><a href="../../../orders/forms/form/all_orders_summary.php" target="right">All Orders</a></li>
+		  </ul>
+		</li>
+        <!---------------------End Repair Orders ----------------------------------------->
+	
+		<li><a href="logout.php" target="right"><strong>Logout</strong></a></li>
+	</ul>
+	
+	
+	
+
+</ul>
+			
+</div>
+</div>
+
+</body>
+</html>
